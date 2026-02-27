@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
 
 
 class WebviewPage extends StatefulWidget {
@@ -127,8 +126,8 @@ class _WebviewPageState extends State<WebviewPage> {
                         controller: _controller
                     ),
                     if (_progress > 0)
-                      const Center(
-                        child: CircularProgressIndicator(),
+                      Center(
+                        child: Image.asset("assets/icons/logo.png"),
                       ),
                   ],
                 ),

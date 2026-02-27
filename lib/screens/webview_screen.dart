@@ -1,11 +1,8 @@
-import 'dart:io';
-
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_app/core/const/app_strings.dart';
 import 'package:webview_app/screens/webview_page.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 class WebviewScreen extends StatelessWidget {
   const WebviewScreen({super.key});

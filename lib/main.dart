@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:webview_app/screens/webview_page.dart';
 import 'package:webview_app/screens/webview_screen.dart';
+
+import 'core/const/app_strings.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const WebviewScreen(),
+      home:  WebviewPage(url: AppString.appUrl),
     );
   }
 }
